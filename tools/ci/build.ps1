@@ -78,7 +78,7 @@ function Build-Orc
         [Parameter(Mandatory)]
         [ValidateSet('Debug', 'MinSizeRel', 'RelWithDebInfo', IgnoreCase=$false)]
         [String[]]
-        $Configuration,
+        $Configuration = "MinSizeRel",
         [Parameter()]
         [ValidateSet('static', 'dynamic', IgnoreCase=$false)]
         [String]
