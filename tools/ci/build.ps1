@@ -140,7 +140,6 @@ function Build-Orc
 
     $CMakeGenerationOptions = @(
         "-S `"${OrcPath}`""
-        "-T ${PlatformToolSet}"
         "-DORC_BUILD_VCPKG=ON"
         "-DORC_VCPKG_ROOT=`"${Vcpkg}`""
         "-DCMAKE_TOOLCHAIN_FILE=`"${Vcpkg}\scripts\buildsystems\vcpkg.cmake`""
