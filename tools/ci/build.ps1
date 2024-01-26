@@ -63,7 +63,7 @@ function Build-Orc
         [Parameter(Mandatory)]
         [ValidateSet('x86', 'x64', IgnoreCase=$false)]
         [String[]]
-        $Architecture,
+        $Architecture = "x64",
         [Parameter()]
         [ValidateSet('vs2017', 'vs2019', 'vs2022')]
         [String]
@@ -71,7 +71,7 @@ function Build-Orc
         [Parameter()]
         [ValidateSet('v141', 'v141_xp', 'v142', 'v143')]
         [String]
-        $PlatformToolSet = "v141",
+        $PlatformToolSet = "v143",
         [Parameter()]
         [String]
         $SystemVersion,
