@@ -71,7 +71,7 @@ function Build-Orc
         [Parameter()]
         [ValidateSet('v141', 'v141_xp', 'v142', 'v143')]
         [String]
-        $PlatformToolSet = "v143",
+        $PlatformToolSet = "v142",
         [Parameter()]
         [String]
         $SystemVersion,
