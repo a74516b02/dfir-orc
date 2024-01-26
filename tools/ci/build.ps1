@@ -82,7 +82,7 @@ function Build-Orc
         [Parameter()]
         [ValidateSet('static', 'dynamic', IgnoreCase=$false)]
         [String]
-        $Runtime = 'static',
+        $Runtime = 'dynamic',
         [Parameter()]
         [System.IO.DirectoryInfo]
         $Vcpkg,
