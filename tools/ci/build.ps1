@@ -118,20 +118,6 @@ function Build-Orc
     }
 
     $Generators = @{
-        "vs2017_x86" = @("-G `"Visual Studio 15 2017`"")
-        "vs2017_x64" = @("-G `"Visual Studio 15 2017 Win64`"")
-        "vs2019_x86" = @(
-                "-G `"Visual Studio 16 2019`""
-                "-A Win32"
-        )
-        "vs2019_x64" = @(
-                "-G `"Visual Studio 16 2019`""
-                "-A x64"
-        )
-        "vs2022_x86" = @(
-                "-G `"Visual Studio 17 2022`""
-                "-A Win32"
-        )
         "vs2022_x64" = @(
                 "-G `"Visual Studio 17 2022`""
                 "-A x64"
