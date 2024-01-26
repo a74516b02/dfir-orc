@@ -2,7 +2,7 @@ parameters:
   arch: ''
 
 jobs:
-- job: vs2019_${{ parameters.arch }}
+- job: vs2022_${{ parameters.arch }}
   pool:
     vmImage: 'windows-2019'
   steps:
