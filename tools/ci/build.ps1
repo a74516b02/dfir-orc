@@ -67,7 +67,7 @@ function Build-Orc
         [Parameter()]
         [ValidateSet('vs2017', 'vs2019', 'vs2022')]
         [String]
-        $ToolChain = 'vs2022',
+        $ToolChain = 'vs2019',
         [Parameter()]
         [ValidateSet('v141', 'v141_xp', 'v142', 'v143')]
         [String]
