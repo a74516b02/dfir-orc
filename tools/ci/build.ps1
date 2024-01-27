@@ -181,7 +181,7 @@ function Build-Orc
         {
             $Parameters = $Generator + $CMakeGenerationOptions + "-DVCPKG_TARGET_TRIPLET=${Arch}-windows-${Runtime}" + "-B `"${BuildDir}`""
             Invoke-NativeCommand $CMakeExe $Parameters
-            Invoke-NativeCommand $CMakeExe "--build ${BuildDir} --config ${Config} -- -maxcpucount"
+            Invoke-NativeCommand $CMakeExe "--build ${BuildDir} --config MinSizeRel -- -maxcpucount"
             Invoke-NativeCommand $CMakeExe "--install ${BuildDir} --prefix ${Output} --config ${Config}"
         }
     }
