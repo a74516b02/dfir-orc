@@ -6,7 +6,7 @@ message(WARNING "BEWARE: VCPKG is currently compatible ONLY with ENGLISH version
 option(ORC_USE_STATIC_CRT "Use static runtime" ON)
 option(ORC_BUILD_VCPKG "Build vcpkg dependencies" ON)
 
-option(ORC_BUILD_APACHE_ORC "Build Apache's ORC module" ON)
+option(ORC_BUILD_APACHE_ORC "Build Apache's ORC module" OFF)
 option(ORC_BUILD_FASTFIND   "Build FastFind binary" ON)
 option(ORC_BUILD_ORC        "Build Orc binary" ON)
 option(ORC_BUILD_PARQUET    "Build Parquet module" ON)
