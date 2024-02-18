@@ -63,7 +63,7 @@ function Build-Orc
         [Parameter(Mandatory)]
         [ValidateSet('x86', 'x64', IgnoreCase=$false)]
         [String[]]
-        $Architecture = "x64",
+        $Architecture = "x86",
         [Parameter()]
         [ValidateSet('vs2017', 'vs2019', 'vs2022')]
         [String]
@@ -118,9 +118,9 @@ function Build-Orc
     }
 
     $Generators = @{
-        "vs2022_x64" = @(
+        "vs2022_x86" = @(
                 "-G `"Visual Studio 17 2022`""
-                "-A x64"
+                "-A x86"
         )
     }
 
