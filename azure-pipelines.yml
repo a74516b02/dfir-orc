@@ -37,7 +37,7 @@ stages:
           assets: |
             $(Build.ArtifactStagingDirectory)/dfir-orc_x86/MinSizeRel/DFIR-Orc_x86.exe
             $(Build.ArtifactStagingDirectory)/dfir-orc_x86/MinSizeRel/DFIR-Orc_x86.pdb
-            $(Build.ArtifactStagingDirectory)/dfir-orc_x64/MinSizeRel/FastFind_x64.exe
-            $(Build.ArtifactStagingDirectory)/dfir-orc_x64/MinSizeRel/FastFind_x64.pdb
+            $(Build.ArtifactStagingDirectory)/dfir-orc_x86/MinSizeRel/FastFind_x86.exe
+            $(Build.ArtifactStagingDirectory)/dfir-orc_x86/MinSizeRel/FastFind_x86.pdb
           changeLogCompareToRelease: 'lastFullRelease'
           changeLogType: 'commitBased'
