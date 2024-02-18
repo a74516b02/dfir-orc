@@ -6,7 +6,7 @@ stages:
     jobs:
     - template: azure-pipelines-template.yml
       parameters:
-        arch: "x64"
+        arch: "x86"
 
   - stage: Publish
     jobs:
@@ -22,7 +22,7 @@ stages:
         inputs:
           buildType: 'current'
           downloadType: 'single'
-          artifactName: 'dfir-orc_x64'
+          artifactName: 'dfir-orc_x86'
           downloadPath: '$(Build.ArtifactStagingDirectory)'
 
       - task: GitHubRelease@1
@@ -35,8 +35,8 @@ stages:
           tagPattern: '^v?[0-9]+\.[0-9]+\.[0-9]+-(alpha|beta|rc)[0-9]+'
           isPreRelease: true
           assets: |
-            $(Build.ArtifactStagingDirectory)/dfir-orc_x64/MinSizeRel/DFIR-Orc_x64.exe
-            $(Build.ArtifactStagingDirectory)/dfir-orc_x64/MinSizeRel/DFIR-Orc_x64.pdb
+            $(Build.ArtifactStagingDirectory)/dfir-orc_x86/MinSizeRel/DFIR-Orc_x86.exe
+            $(Build.ArtifactStagingDirectory)/dfir-orc_x86/MinSizeRel/DFIR-Orc_x86.pdb
             $(Build.ArtifactStagingDirectory)/dfir-orc_x64/MinSizeRel/FastFind_x64.exe
             $(Build.ArtifactStagingDirectory)/dfir-orc_x64/MinSizeRel/FastFind_x64.pdb
           changeLogCompareToRelease: 'lastFullRelease'
