@@ -120,7 +120,7 @@ function Build-Orc
     $Generators = @{
         "vs2022_x86" = @(
                 "-G `"Visual Studio 17 2022`""
-                "-A x86"
+                "-A Win32"
         )
     }
 
